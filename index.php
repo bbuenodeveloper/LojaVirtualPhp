@@ -50,7 +50,7 @@
                 <input type="number" name="cartaoCliente" placeholder="Cartão de crédito">
             </div>
             <div class="form-group">
-                <input type="date" name="dataValidadecartao" placeholder="Data de validade do cartão">
+                <input type="date" name="dataValidadeCartao" placeholder="Data de validade do cartão">
             </div>
             <div class="form-group">
                 <input type="number" maxlength="3" name="cvvCartao" placeholder="CVV do cartão">
