@@ -16,16 +16,16 @@
     }
 
     function validarCPF($cpf){
-        return is_integer($cpf) && count($cpf) == 11;
+        return strlen($cpf) == 11;
     }
     
     function validarCartao($nrnCartao){
-        return is_integer($nrnCartao) && count($nrnCartao) == 16;
+        return strlen($nrnCartao) == 16;
     }
 
     function validarDataValidade($dataValidade){
         return $dataValidade > date('y-m-d');
     }
     function validarCVV($cvv){
-        return is_integer($cvv) && count($cvv) == 3;
+        return strlen($cvv) == 3;
     }
