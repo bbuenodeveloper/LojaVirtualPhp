@@ -18,7 +18,7 @@
                         <p class="card-text"><?php echo $produto["descricao"]; ?></p>
                         <h4 class="text-success">R$<?php echo $produto["preco"]; ?></h4>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#<?php echo $chave ?>">Comprar</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#<?php echo $produto['id']; ?>">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
     
 <!-- Modal -->
 <?php foreach($produtos as $chave=>$produto): ?>
-<div class="modal fade" id="<?php echo $chave ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="<?php echo $produto['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

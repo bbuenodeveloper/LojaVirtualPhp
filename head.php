@@ -5,17 +5,25 @@
     //$usuario = "";
 
     
-    $produtos = [
-        "produto1" => ["nome" =>"Curso Fullstack","descricao"=>"O curso fullstack ensina programação","preco"=> 1200,"img"=>"img/fullstack1.jpg"],
-        "produto2" => ["nome" =>"Curso Mobile android","descricao"=>"O curso mobile ensina criar app","preco"=> 1400,"img"=>"img/android1.jpg"],
-        "produto3" => ["nome" =>"Curso Fullstack","descricao"=>"O curso fullstack ensina programação","preco"=> 1200,"img"=>"img/fullstack1.jpg"],
-        "produto4" => ["nome" =>"Curso Mobile android","descricao"=>"O curso mobile ensina criar app","preco"=> 1400,"img"=>"img/android1.jpg"]
-    ];
+    //$produtos = [
+       // "produto1" => ["nome" =>"Curso Fullstack","descricao"=>"O curso fullstack ensina programação","preco"=> 1200,"img"=>"img/fullstack1.jpg"],
+       // "produto2" => ["nome" =>"Curso Mobile android","descricao"=>"O curso mobile ensina criar app","preco"=> 1400,"img"=>"img/android1.jpg"],
+      //  "produto3" => ["nome" =>"Curso Fullstack","descricao"=>"O curso fullstack ensina programação","preco"=> 1200,"img"=>"img/fullstack1.jpg"],
+      //  "produto4" => ["nome" =>"Curso Mobile android","descricao"=>"O curso mobile ensina criar app","preco"=> 1400,"img"=>"img/android1.jpg"]
+    //];
 
-    $produtos = addProduto("Curso de UX", "Curso incrivel", 2000, "img/fullstack1.jpg", $produtos);
+   // $produtos = addProduto("Curso de UX", "Curso incrivel", 2000, "img/fullstack1.jpg", $produtos);
     
 
     //$categorias = ["Cursos","Tutoriais","Artigos","Forum","códigos"];
+
+    $jsonProdutos = file_get_contents('Produtos.json');
+    $produtos = json_decode($jsonProdutos, true);
+    $produtos = $produtos['Produtos'];
+
+
+    addProduto("Cruso Mobile Android", "Curso para criar um app",2000,"img/android1.jpg");
+    
 
 
 ?>
