@@ -22,7 +22,7 @@
     $produtos = $produtos['Produtos'];
 
 
-    addProduto("Cruso Mobile Android", "Curso para criar um app",2000,"img/android1.jpg");
+    //addProduto("Cruso Mobile Android", "Curso para criar um app",2000,"img/android1.jpg");
     
 
 
