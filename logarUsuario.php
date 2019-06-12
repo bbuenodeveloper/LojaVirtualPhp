@@ -28,7 +28,7 @@
     }
 
     if (isset($usuarioExiste) && password_verify($senha,$usuarioExiste['senha'])){
-
+        logarUsuario($usuarioExiste['nome'], $usuarioExiste['nivelAcesso']);
         header("location:index.php");
 
     }else{

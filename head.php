@@ -1,7 +1,7 @@
 <?php
     include "funcoes.php";
 
-    $usuario = logarUsuario ("Bruno Bueno", 1);
+    $usuario = isset($_SESSION['usuario'])?$_SESSION['usuario']:"";
     //$usuario = "";
 
     

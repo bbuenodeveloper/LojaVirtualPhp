@@ -30,7 +30,7 @@
                         </li>
                     <?php else: ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="Login.php">Login</a>
                         </li>
             </ul>
                 <?php endif; ?>
